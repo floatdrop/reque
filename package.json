@@ -1,0 +1,27 @@
+{
+  "name": "reque",
+  "version": "0.0.0",
+  "description": "PassThrough stream, that handles http(s) requests and have some sweet methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/floatdrop/reque"
+  },
+  "keywords": [
+    "request",
+    "redirect",
+    "timeout"
+  ],
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/reque/issues"
+  },
+  "homepage": "https://github.com/floatdrop/reque",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
