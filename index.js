@@ -16,13 +16,11 @@ function Reque() {
 		req.abort();
 		self.emit('error', new Error('Request timeout. Aborting.'), req);
 	};
-
 }
 
 Reque.prototype = Object.create(PassThrough.prototype);
 
 Reque.prototype.request = function request (req) {
-
 	this.emit(this._req ? 'redirect' : 'request', req);
 
 	this._req = req;
@@ -34,14 +32,13 @@ Reque.prototype.request = function request (req) {
 
 		req.on('response', function () {
 			clearTimeout(timer);
-		})
+		});
 	});
 
 	return this;
 };
 
 Reque.prototype.timeout = function timeout (ms, cb) {
-
 	this._timeout = ms;
 
 	if (cb) {
