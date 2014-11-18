@@ -2,7 +2,7 @@
 
 > Simplified way to handle ClientRequest objects on redirects and timeouts
 
-![maxresdefault](https://cloud.githubusercontent.com/assets/365089/5086026/b45e412c-6f39-11e4-847f-2c07bc2a4874.jpg)
+[![jaltoid](https://cloud.githubusercontent.com/assets/365089/5086026/b45e412c-6f39-11e4-847f-2c07bc2a4874.jpg)](http://www.youtube.com/watch?v=qgJjqwmhN28)
 
 ## Usage
 
