@@ -13,7 +13,7 @@ function Reque() {
 
 	var self = this;
 	this._timeoutCb = function (req) {
-		req.abort();
+		req.emit('timeout', req, req.response);
 		self.emit('error', new Error('Request timeout. Aborting.'), req);
 	};
 }

@@ -70,18 +70,14 @@ describe('timeout', function () {
 		var first = req('http://0.0.0.0:1234');
 
 		reque.on('error', function (err, req) {
-			try {
-				assert.ok(err);
-				assert.equal(err.message, 'Request timeout. Aborting.');
-				assert.equal(req, first);
-				done();
-			} catch (err) {
-				done(err);
-			}
+			assert.ok(err);
+			assert.equal(err.message, 'Request timeout. Aborting.');
+			assert.equal(req, first);
+			done();
 		});
 
 		reque
 			.request(first)
-			.timeout(1);
+			.timeout(10);
 	});
 });
