@@ -1,6 +1,6 @@
 {
   "name": "reque",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PassThrough stream, that handles http(s) requests and have some sweet methods",
   "main": "index.js",
   "scripts": {
